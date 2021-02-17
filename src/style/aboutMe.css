@@ -1,0 +1,310 @@
+body{
+    
+    /* background-image: url("./images/background.jpg"); */
+    background-color:rgba(0,0,0,0.9);
+    background-size:initial;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding:0px;
+    font-family: 'Poppins' , sans-serif;
+    color:white;
+    /* :#333e4f; */
+}
+.container{
+    width: 100%;
+    /* margin-left: 7%;
+    margin-right:7%; */
+    height: 200vh;
+}
+.content1{
+    height:100vh;
+}
+.navbar{
+    /* background-color: #383131; */
+    width: 70%;
+    margin-left: 15%;
+    margin-right:30%;
+    margin-top:4vh;
+    position:relative;
+    display: flex;
+    height: 50px;
+    justify-content:space-between;
+    font-size: 20px;
+}
+.navbar>div>span{
+    font-size: 25px;
+    cursor:pointer;
+    color:#3f7cac;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color:#3f7cac;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+
+
+.main_section{
+    margin-left: 30%;
+    margin-right:30%;
+    margin-top:20vh;
+    width:45%;
+    height: 50vh;
+    
+}
+.main_section >h1{
+    
+    line-height: 0;
+}
+#pre{
+    /* color: #3A7FB0; */
+    font-size:16px;
+    font-weight: 300;
+}
+#post{
+    /* color:#333E4F; */
+    font-size:medium;
+    font-weight:300;
+}
+.resume{
+    font-size: medium;
+    transition:0.4s;
+    text-align: center;
+    width:200px;
+    background-color: rgba(0,0,0,0.9);
+    color:#3f7cac;
+    border: 1px solid #333e4f;
+	padding:5px 10px;
+    border-radius:6px;
+}
+.resume:hover{
+    color:white;
+    background-color: #3f7cac;
+}
+.logo{
+    width:40%;
+    display: inline;
+}
+a{
+    color:#3f7cac ;
+    font-style: unset;
+     text-decoration:none; 
+     cursor:pointer;  
+}
+.icons{
+    margin-top:5vh;
+    font-size:25px; 
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.content2{
+    margin-top:20vh;
+    margin-left: 15%;
+    width:60%;
+    height: 100vh;   
+}
+.content2 > p{
+    width:80%;
+    margin-left: 15%;
+    margin-top:10vh;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.tables{
+    width:80%;
+    margin-left: 15%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+   justify-content:space-evenly;
+}
+.table{
+    width:60%
+}
+.content2>hr{
+    margin-top:8%;
+    height:2px;
+    background: black;
+}
+ 
+.contact{
+    margin-top:5%;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    width:75%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+/* Small screen: phones */
+@media only screen and (max-width: 500px) {
+    .main_section {
+      width:80%;
+      margin-left: 15%;
+      margin-right: 25%;
+      margin-top:18vh;
+      margin-bottom: 60px;
+    }
+    .main_section > h1{
+        line-height: 0.5;
+        font-size: 26px;
+    }
+    #pre{
+        font-size:14px;
+        font-weight: 300;
+    }
+    #post{
+        font-size:14px;
+        font-weight:300;
+    }
+    .resume{
+        width:200px;
+    }
+    .resume>p{
+        font-size: 10px;
+    }
+    .icons{
+    margin-top:2vh;
+    width:50%;
+    font-size: 10px;
+    }
+    .contact{
+        font-size: 10px;
+        justify-content: space-around;
+    }
+
+  }
+  /* Small screen: Tablets */
+@media only screen and (max-width: 900px) {
+    .logo{
+        width:50%;
+    }
+    .logo >img{
+        width: 20%;
+        height: auto;
+    }
+}
+  /* Small screen: Tablets */
+  @media only screen and (max-width: 1200px) {
+    .logo{
+        width:50%;
+    }
+}
+  /* Large screen: desktop */
+  @media only screen and (min-width: 1800px) {
+      .container{
+        width:45%;
+        padding-left: 15%;
+        padding-right:15% ;
+      }
+      .logo{
+          width:95%;
+      }
+      .logo>img{
+          width: 80%;
+          height:auto;
+      }
+      .menu>a{
+          font-size: 60px;
+          font-weight:bold;
+      }
+      .main_section{
+          margin-top: 20vh;
+          width:70%;
+          height: 40vh;
+      }
+      .main_section >h1{
+          font-size:30px;
+      }
+      .iconParent{
+          width:100%;
+          margin-right: 12%;
+      }
+      .icons{
+          font-size:30px;
+      }
+      #pre{
+        /* color: #3A7FB0; */
+        font-size:24px;
+        font-weight: 300;
+    }
+    #post{
+        /* color:#333E4F; */
+        font-size:24px;
+        font-weight:300;
+    }
+
+    .main_section > h1{
+        line-height: 0;
+        font-size: 44px;
+    }
+    .content2{
+        margin-top:25vh;
+        height:90vh;
+        width:90%
+    }
+    .content2>p,.tables{
+        font-size: 22px;
+        width:100%;
+        margin-left: 0%;
+    }
+    .content2>h2{
+        font-size:35px;
+        
+    }
+    
+    .contact{
+        margin-top:5%;
+        margin-left:0%;
+        margin-right: 0%;
+        margin-bottom: 5%;
+        font-size: 25px;
+    }
+  }
