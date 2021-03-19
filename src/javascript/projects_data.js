@@ -18,6 +18,7 @@ import file4 from "../assets/4.pdf";
 import file5 from "../assets/5.pdf";
 import file6 from "../assets/6.pdf";
 
+
 //JSON for project data:
 export const data ={
     "projects":
@@ -102,7 +103,7 @@ export const data ={
             {
                 "project_id": 5,
                 "date": " December 2019",
-                "heading": "Modeling the trajectory of a table tennis ball",
+                "heading": "Modeling the trajectory of a table tennis ball.",
                 "tags": ["Data Collection", "Statistical Analysis", "Data Processing"],
                 "description": "Modelling the trajectory of table tennis ball in MATLAB to study the difference in trajectory of a table tennis ball hit with top-spin or back-spin with a flat hit of the ball with no spin. The code includes a UI kit for interactive usage.",
                 "awards": "",

@@ -23,7 +23,7 @@ function loadProjects(){
         }
         // if(tag_array.includes(category))
         {
-            var section1 ='<div class="date">'+date+'</div><div class="header"><h5>'+heading+'</h5><div class="tags">'+tag_list+'</div>';
+            var section1 ='<div class="project_date">'+date+'</div><div class="project_header"><h5>'+heading+'</h5><div class="project_tags">'+tag_list+'</div>';
             var section2='<img src='+image_link+'><p>'+description+'</p>';
             var section3='';
             if (is_report=="1"){
@@ -43,7 +43,7 @@ function loadProjects(){
     $('.project_section').slick({
         // centerMode: true,
         // centerPadding: '60px',
-        dots: true,
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         responsive: 

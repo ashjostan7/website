@@ -23,11 +23,10 @@ body{
     /* background-color: #383131; */
     width: 70%;
     margin-left: 15%;
-    margin-right:30%;
+    margin-right:15%;
     margin-top:4vh;
     position:relative;
     display: flex;
-    height: 50px;
     justify-content:space-between;
     font-size: 20px;
 }
@@ -188,6 +187,10 @@ a{
 }
 /* Small screen: phones */
 @media only screen and (max-width: 500px) {
+    .navbar{
+        width:80%;
+        margin: 0% 5% 0% 10%;
+    }
     .main_section {
       width:80%;
       margin-left: 15%;
