@@ -17,9 +17,12 @@ import file3 from "../assets/3.pdf";
 import file4 from "../assets/4.pdf";
 import file5 from "../assets/5.pdf";
 import file6 from "../assets/6.pdf";
-
+import cv from "../assets/resume/Ashish_CV.pdf";
 
 //JSON for project data:
+export const resume_data={
+    "link":cv
+}
 export const data ={
     "projects":
         [

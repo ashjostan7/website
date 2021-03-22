@@ -6,11 +6,12 @@ import 'slick-carousel';
 
 
 
-import {data} from "./javascript/projects_data"
+import {data,resume_data} from "./javascript/projects_data"
 function loadProjects(){ 
 
     var category="";
-    for (var i = 0; i <data.projects.length; i++) {
+    for (var i = 0; i <data.projects.length; i++) 
+    {
         var {project_id,date,heading,tags,description,image_link,awards,is_report,report_link,is_code,code_link,is_video,video_link}=data.projects[i];
         
         //Creating the tags for each project card
@@ -70,5 +71,15 @@ function loadProjects(){
 }
 $(document).ready(function () {
     loadProjects();
+})
+
+function load_resume(){
+    console.log("here");
+    var link=resume_data.link;
+    $(".resume_link").append('<a  href='+ link + ' target="blank" download><button class="resume">Download my resume</button></a>')
+}
+$(document).ready(function () {
+    load_resume();
+    console.log("ready");
 })
 
