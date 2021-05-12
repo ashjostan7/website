@@ -24,8 +24,8 @@ function loadProjects(){
         }
         // if(tag_array.includes(category))
         {
-            var section1 ='<div class="project_date">'+date+'</div><div class="project_header"><h5>'+heading+'</h5><div class="project_tags">'+tag_list+'</div>';
-            var section2='<img src='+image_link+'><p>'+description+'</p>';
+            var section2 ='<div class="project_date">'+date+'</div><div class="project_header"><h3>'+heading+'</h3><div class="project_tags">'+tag_list+'</div>';
+            var section1='<img src='+image_link+'>';
             var section3='';
             if (is_report=="1"){
                 section3='<div><a href='+report_link+' target="blank">Read Report</a></div>'
@@ -37,38 +37,11 @@ function loadProjects(){
                 section3=section3+'<div><a href='+video_link+'target="_blank">View Video</a></div>'
             }
         
-            $('<div class="project_card">'+section1+'<div class="description">'+section2+'</div> <div class=report>'+section3+'</div></div>').appendTo(".project_section");
+            $('<div class="project_card">'+section1+'<div class="project_description">'+section2+'<p>'+description+'</p><div class=project_report>'+section3+'</div></div></div>').appendTo(".project_section");
         }
     }
-
-    $('.project_section').slick({
-        // centerMode: true,
-        // centerPadding: '60px',
-        dots: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: 
-        [
-            {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                dots:true
-            }
-            },
-            {
-            breakpoint: 780,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots:true
-            }
-            }
-        ]
-      });
     
-}
+ }
 $(document).ready(function () {
     loadProjects();
 })
