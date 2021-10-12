@@ -18,20 +18,16 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    /* margin-left: 10vw;
-    margin-right:10vw; */
-    
+
 }
 .navbar{
-    /* background-color: #383131; */
-    width: 70%;
-    /* margin-left: 15%;
-    margin-right:15%; */
-    margin-top:4vh;
+    background-color:rgba(0,0,0,0.4);   
+    width: 100%;
     position:relative;
+ 
 
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     font-size: 30px;
     font-style: bold;
 }
@@ -298,8 +294,6 @@ a{
 @media only screen and (max-width: 600px) {
 
     .navbar{
-    width: 80%;
-
     font-size: 25px;
     font-style: bold;
     }
@@ -331,4 +325,9 @@ a{
         object-fit: contain;
         border-radius: 3%;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+
 }
