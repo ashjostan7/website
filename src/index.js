@@ -37,7 +37,7 @@ function loadProjects(){
                 section3=section3+'<div><a href='+video_link+'target="_blank">View Video</a></div>'
             }
         
-            $('<div class="project_card">'+section1+'<div class="project_description">'+section2+'<p>'+description+'</p><div class=project_report>'+section3+'</div></div></div>').appendTo(".project_section");
+            $('<div class="project_card">'+section1+'<div class="project_description">'+section2+'<div class=project_report>'+section3+'</div></div></div>').appendTo(".project_section");
         }
     }
     
