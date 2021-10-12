@@ -96,7 +96,7 @@ body{
 
     margin-top:20vh;
     margin-bottom: 15vh;
-    width:40%;
+    width:60%;
     text-align: center;
 }
 .main_section >h1{
@@ -205,6 +205,8 @@ a{
 }
 
 .page_title{
+    margin-top: 10vh;
+    margin-bottom: 10vh ;
     text-align: center;
     font-size: x-large;
     color: #474747;
