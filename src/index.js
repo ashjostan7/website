@@ -20,11 +20,18 @@ function loadProjects(){
         for (var j=0; j<tags.length;j++)
         {
             tag_array.push(tags[j]);
-            tag_list=tag_list+'<p>'+tags[j]+'</p>'
+            if(j!=tags.length-1)
+                {
+                    tag_list=tag_list+' '+tags[j]+' | '
+                }
+            else
+            {
+                tag_list=tag_list+''+tags[j]+''
+            }
         }
         // if(tag_array.includes(category))
         {
-            var section2 ='<div class="project_date">'+date+'</div><div class="project_header"><h3>'+heading+'</h3><div class="project_tags">'+tag_list+'</div>';
+            var section2 ='<div class="project_date">'+date+'</div><div class="project_header"><h3>'+heading+'</h3><div class="project_tags"><p>'+tag_list+'</p></div>';
             var section1='<img src='+image_link+'>';
             var section3='';
             if (is_report=="1"){
