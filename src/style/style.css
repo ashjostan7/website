@@ -180,12 +180,18 @@ a{
     font-style: italic;
     font-size: x-large;
 }
-.skills_list{
+.aboutMe_list{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    line-height: 1;
+} 
+.list_item{
+    width:40%;
 }
-
+.skill_items{
+    color: #3f7cac;
+}
 .page_title{
     margin-top: 10vh;
     margin-bottom: 10vh ;
@@ -194,6 +200,7 @@ a{
     color: #474747;
 }
 .title{
+    margin-top: 10vh;
     text-align: center;
     font-size: x-large;
     color: #474747;
@@ -323,6 +330,13 @@ a{
     .footer{
         width:60%;
     }
+    .page_title{
+        margin-top: 5vh;
+        margin-bottom: 5vh ;
+    }
+    .title{
+        margin-top: 5vh;
+    }
     .project_section{
         display: flex;
         flex-flow:column wrap;
@@ -352,17 +366,24 @@ a{
         text-align: center;
     
     }
-    .skills_list{
+    .list_item{
+        width:100%;
+    }
+    .aboutMe_list{
         display:flex;
         flex-flow: column wrap;
         justify-content: center;
-        line-height: 0.5;
+        
     }
 }
 
 
 
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .page_title{
+        margin-top: 5vh;
+        margin-bottom: 5vh ;
+    }
     .project_section{
         display: flex;
         flex-flow:row wrap;
@@ -373,6 +394,16 @@ a{
     .project_card{
         width: 350px!important;
         height: auto;
+    }
+    .aboutMe_content{
+        width:70%; 
+    
+        margin-top:5vh;
+        font-size:medium;
+        font-weight: 300;
+    
+        text-align: center;
+    
     }
 
 }
