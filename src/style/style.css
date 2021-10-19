@@ -163,12 +163,7 @@ a{
     margin-top:5vh;
     font-size: large;
     font-weight: 300;
-
     text-align: center;
-
-}
-.aboutMe_content>p{
-    text-align: center;    
 }
 .profile_photo{
     border-radius: 80%;
@@ -185,12 +180,16 @@ a{
     flex-flow: row wrap;
     justify-content: space-between;
     line-height: 1;
+    margin-bottom: 5vh;
 } 
 .list_item{
     width:40%;
 }
-.skill_items{
+.list_description{
     color: #3f7cac;
+}
+#aboutMe_footer{
+    margin: 5vh 0 5vh 0;
 }
 .page_title{
     margin-top: 10vh;
