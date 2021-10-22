@@ -175,17 +175,80 @@ a{
     font-style: italic;
     font-size: x-large;
 }
-.aboutMe_list{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    line-height: 1;
-    margin-bottom: 5vh;
+.section{
+    
+    width:100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    
 } 
-.list_item{
-    width:40%;
+.entry_left{
+    width:50%;
+    margin: 5px 15px 5px 5px;
 }
-.list_description{
+.entry_left .entry{
+    margin-top: 16vh;
+    text-align: right;
+}
+.entry_left .entry:first-of-type{
+    margin-top: 10vh;
+}
+.entry_left .heading:before {
+    content: '';
+    position: absolute;
+    width:8px;
+    height:8px;
+    border:4px solid #3f7cac;
+    background-color:#000000e6;
+    border-radius:100%;
+    right:0%;
+    transform:translateX(-50%);
+    right:-32px;
+    z-index:1000;
+  }
+.line{
+    background-color:#3f7cac;
+    width:2px;
+}
+.entry_right{
+    width:50%;
+    margin: 5px 5px 5px 15px;
+}
+.entry_right .entry{
+    margin-bottom: 16vh;
+    text-align: left;
+}
+.entry_right :last-of-type{
+    margin-bottom: 0%;
+}
+
+.heading {
+    font-size:20px;
+    line-height:1;
+    margin-bottom:12px;
+    position: relative;
+    color:#fff;
+    
+}
+.entry_right .heading:before {
+    content: '';
+    position: absolute;
+    width:8px;
+    height:8px;
+    border:4px solid #3f7cac;
+    background-color:#000000e6;
+    border-radius:100%;
+    left:0%;
+    transform:translateX(-50%);
+    left:-16px;
+    z-index:1000;
+  }
+  .entry{
+      line-height: 0;
+  }
+.entry_description{
     color: #3f7cac;
 }
 #aboutMe_footer{
@@ -373,6 +436,54 @@ a{
         flex-flow: column wrap;
         justify-content: center;
         
+    }
+    /* ------------------------------------------------ */
+
+    .entry_left .entry{
+        margin-top: 16vh;
+        text-align: right;
+    }
+    .entry_left .entry:first-of-type{
+        margin-top: 10vh;
+    }
+    .entry_right{
+        width:50%;
+        margin: 5px 5px 5px 15px;
+    }
+    .entry_right .entry{
+        margin-bottom: 16vh;
+        text-align: left;
+    }
+    .entry_right :last-of-type{
+        margin-bottom: 0%;
+    }
+    
+    .heading {
+        font-size:16px;
+        line-height:1;
+        margin-bottom: 0;
+
+        
+    }
+    .entry_right .heading:before {
+        content: '';
+        position: absolute;
+        width:8px;
+        height:8px;
+        border:4px solid #3f7cac;
+        background-color:#000000e6;
+        border-radius:100%;
+        left:0%;
+        transform:translateX(-50%);
+        left:-16px;
+        z-index:1000;
+      }
+      .entry{
+          line-height: 1;
+      }
+    .entry_description{
+        font-size: 12px;
+        font-weight: 500;
     }
 }
 
