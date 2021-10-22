@@ -175,6 +175,32 @@ a{
     font-style: italic;
     font-size: x-large;
 }
+.skills_section{
+    width:50%;
+    margin-left: 25%;
+    display:flex;
+    flex-direction:column;
+    
+    justify-content: end;
+  }
+  .skills_description{
+      line-height: 0;
+      margin-bottom: 30px;
+  }
+  progress {
+      background-color: #f3f3f3;
+      height: 1em;
+      width: 100%;
+  }
+  
+  progress::-webkit-progress-bar {
+      background-color: #474747;
+  }
+  
+  progress::-webkit-progress-value {
+      background-color: #3f7cac;
+  }
+
 .section{
     
     width:100%;
@@ -182,6 +208,7 @@ a{
 
     display: flex;
     flex-direction: row;
+
     
 } 
 .entry_left{
@@ -203,7 +230,6 @@ a{
     border:4px solid #3f7cac;
     background-color:#000000e6;
     border-radius:100%;
-    right:0%;
     transform:translateX(-50%);
     right:-32px;
     z-index:1000;
@@ -220,6 +246,7 @@ a{
     margin-bottom: 16vh;
     text-align: left;
 }
+
 .entry_right :last-of-type{
     margin-bottom: 0%;
 }
@@ -438,20 +465,23 @@ a{
         
     }
     /* ------------------------------------------------ */
-
+    .skills_section{
+        width:80%;
+        margin-left: 10%;
+      }
     .entry_left .entry{
         margin-top: 16vh;
         text-align: right;
     }
     .entry_left .entry:first-of-type{
-        margin-top: 10vh;
+        margin-top: 16vh;
     }
     .entry_right{
         width:50%;
         margin: 5px 5px 5px 15px;
     }
     .entry_right .entry{
-        margin-bottom: 16vh;
+        margin-bottom: 20vh;
         text-align: left;
     }
     .entry_right :last-of-type{
@@ -465,24 +495,11 @@ a{
 
         
     }
-    .entry_right .heading:before {
-        content: '';
-        position: absolute;
-        width:8px;
-        height:8px;
-        border:4px solid #3f7cac;
-        background-color:#000000e6;
-        border-radius:100%;
-        left:0%;
-        transform:translateX(-50%);
-        left:-16px;
-        z-index:1000;
-      }
-      .entry{
-          line-height:1;
+    .entry{
+          line-height:0;
       }
     .entry_description{
-        line-height:0;
+        line-height:1;
         font-size: 12px;
         font-weight: 500;
     }
@@ -507,7 +524,7 @@ a{
         height: auto;
     }
     .aboutMe_content{
-        width:70%; 
+        width:80%; 
     
         margin-top:5vh;
         font-size:medium;
@@ -515,6 +532,33 @@ a{
     
         text-align: center;
     
+    }
+
+    .entry_left .entry{
+        margin-top: 16vh;
+        text-align: right;
+    }
+    .entry_left .entry:first-of-type{
+        margin-top: 16vh;
+    }
+    .entry_right{
+        width:50%;
+        margin: 5px 5px 5px 15px;
+    }
+    .entry_right .entry{
+        margin-bottom: 20vh;
+        text-align: left;
+    }
+    .entry_right :last-of-type{
+        margin-bottom: 0%;
+    }
+    .entry{
+          line-height:0;
+      }
+    .entry_description{
+        line-height:1;
+        font-size: 12px;
+        font-weight: 500;
     }
 
 }
