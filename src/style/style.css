@@ -479,9 +479,10 @@ a{
         z-index:1000;
       }
       .entry{
-          line-height: 1;
+          line-height:1;
       }
     .entry_description{
+        line-height:0;
         font-size: 12px;
         font-weight: 500;
     }
