@@ -11,6 +11,7 @@ import img8 from "../images/project/8.JPG";
 import img9 from "../images/project/9.JPG";
 
 //Importing project reports:
+import file0 from "../assets/0.pdf";
 import file1 from "../assets/1.pdf";
 import file2 from "../assets/2.pdf";
 import file3 from "../assets/3.pdf";
@@ -28,14 +29,14 @@ export const data ={
         [
             {
                 "project_id": 0,
-                "date": "August 2020 - In progress",
+                "date": "August 2020",
                 "heading": "Extending Pose Estimation Algorithms to study lower leg kinematics",
                 "tags": ["Deep Learning", "Biomechanics"],
                 "description": "Reported on the feasibility of using Pose estimation algorithms for motion capture for Industry Partner New Balance as a part of my Master's Thesis. Trained a pose estimation model on a MobileNet v2 and ResNet 18 backbone on a custom made randomised dataset (200 images) and sequential dataset(900 images). The model was used to study lower leg kinematics.",
                 "awards": "",
                 "image_link": img0,
-                "is_report": "0",
-                "report_link": "./assets/0.pdf",
+                "is_report": "1",
+                "report_link": file0,
                 "is_code": "0",
                 "code_link": "",
                 "is_video":"0",

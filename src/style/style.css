@@ -161,6 +161,7 @@ a{
     width:50%; 
 
     margin-top:5vh;
+    margin-bottom: 5vh;
     font-size: large;
     font-weight: 300;
     text-align: center;
@@ -189,7 +190,7 @@ a{
   }
   progress {
       background-color: #f3f3f3;
-      height: 1em;
+      height: 0.5em;
       width: 100%;
   }
   
@@ -207,9 +208,7 @@ a{
     height: auto;
 
     display: flex;
-    flex-direction: row;
-
-    
+    flex-direction: row;  
 } 
 .entry_left{
     width:50%;
@@ -272,8 +271,8 @@ a{
     left:-16px;
     z-index:1000;
   }
-  .entry{
-      line-height: 0;
+.entry{
+    line-height: 0;
   }
 .entry_description{
     color: #3f7cac;
