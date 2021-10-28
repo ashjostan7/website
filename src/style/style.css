@@ -146,6 +146,9 @@ a{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+
+    position: fixed;
+    bottom: 10vh;
 }
 
 .pop_color{
@@ -157,19 +160,18 @@ a{
 
 .aboutMe_content{
     margin-top:10vh;
-    height: 100vh; 
     width:50%; 
 
     margin-top:5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     font-size: large;
     font-weight: 300;
     text-align: center;
 }
 .profile_photo{
     border-radius: 80%;
-    height:25%;
-    width: auto;
+    width:25%;
+    height: auto;
 }
 #tagline{
     color:#3f7cac ;
@@ -278,7 +280,13 @@ a{
     color: #3f7cac;
 }
 #aboutMe_footer{
-    margin: 5vh 0 5vh 0;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:60%;
+    margin-top: 15vh;
+    margin-left: 20%;
 }
 .page_title{
     margin-top: 10vh;
@@ -366,8 +374,8 @@ a{
     padding:1%;
 }
 .project_report>div:hover{
-    color:black;
-    background-color: #3f7cac;
+    color:white !important;
+    background-color: black;
 }
 /*------------------------------------------------*/
 
@@ -413,7 +421,17 @@ a{
         margin:5vh 0% 10vh 0%;
         width: 100%;
         height: 50vh;
+
         align-content: center;
+        line-height: 1;
+    }
+    #post{
+        line-height: 1;
+    }
+    .icons{
+        margin-top: 5vh;
+        font-size:2rem;
+        width:30%;
     }
     .footer{
         width:60%;
@@ -444,7 +462,6 @@ a{
     }
     .aboutMe_content{
         margin-top:10vh;
-        height: 100vh; 
         width:90%; 
     
         margin-top:5vh;
@@ -517,8 +534,9 @@ a{
         flex-flow:row wrap;
         justify-content: space-around;
     
-        width:80%;
+        width:80%;    
     }
+    
     .project_card{
         width: 350px!important;
         height: auto;
